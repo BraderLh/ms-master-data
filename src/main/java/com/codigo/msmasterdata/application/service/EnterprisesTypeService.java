@@ -24,12 +24,12 @@ public class EnterprisesTypeService implements EnterprisesTypeIn {
     }
 
     @Override
-    public List<EnterprisesType> findAlll() {
-        return enterprisesTypeIn.findAlll();
+    public List<EnterprisesType> findAll() {
+        return enterprisesTypeIn.findAll();
     }
 
     @Override
-    public EnterprisesType update(Long id, EnterprisesType enterprisesType) {
+    public Optional<EnterprisesType> update(Long id, EnterprisesType enterprisesType) {
         return enterprisesTypeIn.update(id,enterprisesType);
     }
 

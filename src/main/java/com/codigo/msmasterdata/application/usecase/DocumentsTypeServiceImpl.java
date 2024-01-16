@@ -25,7 +25,7 @@ public class DocumentsTypeServiceImpl implements DocumentsTypeIn {
     }
 
     @Override
-    public List<DocumentsType> findAlll() {
+    public List<DocumentsType> findAll() {
         return documentsTypeOut.findAlllDocumentsTypes();
     }
 

@@ -25,12 +25,12 @@ public class EnterprisesTypeServiceImpl implements EnterprisesTypeIn {
     }
 
     @Override
-    public List<EnterprisesType> findAlll() {
-        return enterprisesTypeOut.findAlllEnterprisesTypes();
+    public List<EnterprisesType> findAll() {
+        return enterprisesTypeOut.findAllEnterprisesTypes();
     }
 
     @Override
-    public EnterprisesType update(Long id, EnterprisesType enterprisesType) {
+    public Optional<EnterprisesType> update(Long id, EnterprisesType enterprisesType) {
         return enterprisesTypeOut.updateEnterprisesType(id,enterprisesType);
     }
 

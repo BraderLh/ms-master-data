@@ -23,8 +23,8 @@ public class DocumentsTypeService implements DocumentsTypeIn {
     }
 
     @Override
-    public List<DocumentsType> findAlll() {
-        return documentsTypeIn.findAlll();
+    public List<DocumentsType> findAll() {
+        return documentsTypeIn.findAll();
     }
 
     @Override

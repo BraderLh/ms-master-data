@@ -2,9 +2,9 @@ package com.codigo.msmasterdata.infraestructure.entity;
 
 import com.codigo.msmasterdata.domain.model.DocumentsType;
 import com.codigo.msmasterdata.domain.model.EnterprisesType;
-import com.codigo.msmasterdata.infraestructure.entity.common.Audit;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Timestamp;
@@ -13,6 +13,7 @@ import java.sql.Timestamp;
 @Table(name = "enterprises_type")
 @Getter
 @Setter
+@NoArgsConstructor
 public class EnterprisesTypeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

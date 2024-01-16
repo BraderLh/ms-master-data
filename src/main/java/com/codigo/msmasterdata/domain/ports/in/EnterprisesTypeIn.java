@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface EnterprisesTypeIn {
     EnterprisesType create(EnterprisesType enterprisesType);
     Optional<EnterprisesType> findOne(Long id);
-    List<EnterprisesType> findAlll();
-    EnterprisesType update(Long id,EnterprisesType enterprisesType);
+    List<EnterprisesType> findAll();
+    Optional<EnterprisesType> update(Long id,EnterprisesType enterprisesType);
     Optional<EnterprisesType> delete(Long id); //UPDATE STATUS
 }

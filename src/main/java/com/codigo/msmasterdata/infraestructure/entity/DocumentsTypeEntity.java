@@ -1,9 +1,7 @@
 package com.codigo.msmasterdata.infraestructure.entity;
 
 import com.codigo.msmasterdata.domain.model.DocumentsType;
-import com.codigo.msmasterdata.infraestructure.entity.common.Audit;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

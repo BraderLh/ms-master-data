@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/v1/documents")
@@ -37,7 +36,7 @@ public class DocumentsTypeController {
     }
     @GetMapping()
     public List<DocumentsType> findAll(){
-        return documentsTypeService.findAlll();
+        return documentsTypeService.findAll();
     }
 
     @PutMapping("/{id}")
@@ -53,6 +52,4 @@ public class DocumentsTypeController {
                 .map(documentsType1 -> new ResponseEntity<>(documentsType1,HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
-
-
 }
